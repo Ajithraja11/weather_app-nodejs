@@ -1,0 +1,44 @@
+h1{
+    color: rgb(45, 45, 143);
+}
+.header{
+    text-align: center;
+    margin: 0%;
+    background-color: grey;
+    padding:3%;
+   
+}
+
+.nav{
+    text-align: center;
+    background-color: darkkhaki;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+    
+}
+.footer {
+    margin-top: 0%;
+    text-align: center;
+    color: grey;
+}
+.al{
+    padding-left: 5%;
+    text-decoration: none;
+}
+img{
+    padding-left: 3%;
+    padding-top: 2%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+.main-content{
+    flex-grow: 1;
+}
+.error{
+
+    color: red;
+}
