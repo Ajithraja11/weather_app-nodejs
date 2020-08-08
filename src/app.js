@@ -5,6 +5,7 @@ const geocode=require('./utils/geocode')
 const weather=require('./utils/weather')
 
 const app=express()
+const port=process.env.PORT || 3000
 
 app.set('view engine','hbs')
 //by default it will search in views directory
@@ -43,7 +44,7 @@ app.get('/weather',(req,res)=>{
         if(error)
         {
             return res.send({
-            
+             
                 error:'you must provide a search term'
             })
         }
@@ -91,6 +92,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("Server started...")
 })
