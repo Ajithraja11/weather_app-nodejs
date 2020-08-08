@@ -45,7 +45,7 @@ app.get('/weather',(req,res)=>{
         {
             return res.send({
              
-                error:'you must provide a search term'
+                error:'you must provide a valid search term'
             })
         }
         weather(latitude+','+longitude,(error,forecast)=>{

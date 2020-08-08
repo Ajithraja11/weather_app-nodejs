@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit',(event)=>{
             }
             else{
                 messageOne.textContent=data.location
-                messageTwo.textContent=data.forecast.temperature+' '+data.forecast.rain
+                messageTwo.textContent="current temperature "+data.forecast.temperature+' and chance of rain today is '+data.forecast.rain
                 console.log(data.location)
                 console.log(data.forecast)
             }
